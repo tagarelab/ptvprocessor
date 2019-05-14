@@ -12,6 +12,11 @@ The prepare function takes a raw tiff file and either a .xml file or .csv file f
 
 The hyperparams includes our grid-search based hyperparameter tuning, built on top of MATLAB's fitrgp function, and will output a pair of matrices encoding the computed velocities, as well as a number of parameter options and model standard deviation.
 
+For example, suppose we had a tiff file called 'flow.tiff' and after applying TrackMate obtained 'tracks.xml'. We use a segmentation file saved as 'seg' in the workspace. Then to obtain the velocity estimates we might run in the MATLAB console: 
+
+[X, V, tracks, img] = prepare('flow.tiff', 'tracks.xml', 33, 'TrackMate', 17, 35) ;
+[mu_x, mu_y, mu_xsd, mu_ysd, ~,~,~,~,~,~,~] = hyperparams(X,V,seg);
+
 # Data
 
 The data includes every file we used except for the raw tiff file and segmentation data files. Both types are too large for Github, but either the first or last author would be more than happy to provide the dataset. The segmentation files in particular are easy to produce on your own and do not significantly affect the results.
