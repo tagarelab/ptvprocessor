@@ -15,6 +15,7 @@ The hyperparams includes our grid-search based hyperparameter tuning, built on t
 For example, suppose we had a tiff file called 'flow.tiff' and after applying TrackMate obtained 'tracks.xml'. We use a segmentation file saved as 'seg' in the workspace. Then to obtain the velocity estimates we might run in the MATLAB console: 
 
 [X, V, tracks, img] = prepare('flow.tiff', 'tracks.xml', 33, 'TrackMate', 17, 35) ;
+
 [mu_x, mu_y, mu_xsd, mu_ysd, ~,~,~,~,~,~,~] = hyperparams(X,V,seg);
 
 # Data
