@@ -16,7 +16,7 @@ For example, suppose we had a tiff file called 'flow.tiff' and after applying Tr
 
 [X, V, tracks, img] = prepare('flow.tiff', 'tracks.xml', 33, 'TrackMate', 17, 35) ;
 
-[mu_x, mu_y, mu_xsd, mu_ysd, ~,~,~,~,~,~,~] = hyperparams(X,V,seg);
+[mu_x, mu_y, mu_xsd, mu_ysd, ~ , ~ , ~ , ~ , ~ , ~ , ~] = hyperparams(X,V,seg);
 
 # Data
 
