@@ -1,6 +1,8 @@
 # PTVProcessor
 post-processing tools, including main Gaussian Process regression (GPR) function 
 
+See the manual.pdf for detailed instructions on usage.
+
 # Requirements (and Recommendations)
 MATLAB 
 Statistics and Machine Learning Toolbox (included in MATLAB 2016+) 
