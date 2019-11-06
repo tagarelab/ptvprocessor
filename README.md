@@ -26,4 +26,4 @@ The data includes every file we used except for the raw tiff file and segmentati
 
 # GUI 
 
-Coming soon!
+The GUI is provided in the directory 'PTVProcessor' and can be accessed by opening Matlab (with that directory included in the path) and running the command 'PTVProcessor'. An additional README file is provided in the directory.
